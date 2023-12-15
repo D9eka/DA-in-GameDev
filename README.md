@@ -17,8 +17,29 @@
 ## Задание 1. 
 ### Написать программу Hello World на Python с запуском в Jupiter Notebook.
 
+```py
+print("Hello World")
+```
+
 ## Задание 2. 
 ### Написать программу Hello World на C# с запуском на Unity. 
+
+```cs
+using TMPro;
+using UnityEngine;
+
+public class HelloWorld : MonoBehaviour
+{
+    [SerializeField] private TextMeshProUGUI textHandler;
+
+    private void Start()
+    {
+        string message = "Hello World";
+        textHandler.text = message;
+        Debug.Log(message);
+    }
+}
+```
 
 ## Задание 3. 
 ### Оформить отчет в виде документации на github (markdown-разметка).
